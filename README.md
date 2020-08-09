@@ -12,7 +12,11 @@ It's intended for python3.
 Goals:
 
 Wrote the app. ✔️
+
 Confirmed Working on Windows. ✔️
+
 Confirmed Working on Linux. 📝 TODO
+
 Write a better GUI. 📝 TODO
+
 Write an automatic audio normalizer to -3dBFS. 📝 TODO
