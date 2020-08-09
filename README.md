@@ -9,7 +9,9 @@ The requirements are:
 It's intended for python3.
 
 
-Goals:
+
+________________________
+          Goals:
 
 Wrote the app. ✔️
 
