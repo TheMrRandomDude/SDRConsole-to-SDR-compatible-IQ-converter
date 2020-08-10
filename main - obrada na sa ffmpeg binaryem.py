@@ -1,4 +1,5 @@
 #Required modules: tkinter
+#Required binaries: ffmpeg binary, download from: https://ffbinaries.com/downloads
 
 import tkinter
 from tkinter import filedialog
@@ -37,7 +38,6 @@ for path in lst:
     print(outpath)
     
     komanda = 'ffmpeg.exe -i "' + str(path) + '" -filter:a "volume=-66dB" -c:a pcm_s32le "' + str(outpath) + '"'
-    #os.popen(resource_path(komanda))
     os.system(komanda)
     
 print("Thank you for using the app! Repo: https://github.com/TheMrRandomDude/SDRConsole-to-SDR-compatible-IQ-converter")
