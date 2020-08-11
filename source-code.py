@@ -37,7 +37,7 @@ for path in lst:
     outpath = str(os.path.join(folder_selected + os.sep + "Converted_SDRSharp_Compatible_" + str(os.path.splitext(os.path.basename(path))[0]) + str(os.path.splitext(path)[1]))).replace("\\", "/")
     print(outpath)
     
-    komanda = 'ffmpeg.exe -i "' + str(path) + '" -filter:a "volume=-66dB" -c:a pcm_s32le "' + str(outpath) + '"'
+    komanda = 'ffmpeg.exe -i "' + str(path) + '" -filter:a "volume=-66dB" -c:a pcm_s32le -rf64 auto "' + str(outpath) + '"'
     os.system(komanda)
     
 print("Thank you for using the app! Repo: https://github.com/TheMrRandomDude/SDRConsole-to-SDR-compatible-IQ-converter")
