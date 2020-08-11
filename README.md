@@ -4,21 +4,25 @@ Hi! Welcome to the app! This app is intended to process SDRConsole IQ recordings
 
 The requirements are:
 
-- Modules: tkinter, ffmpeg-python (They can be installed with pip on Windows or pip3 on Linux).
+- Modules: tkinter.
 
-It's intended for python3.
+It's intended for python3.8.2.
+
+It utilizes ffmpeg binaries from https://ffbinaries.com/downloads and the libav codec.
 
 
 
 ________________________
-          Goals:
+# Goals:
 
 Wrote the app. ✔️
 
 Confirmed Working on Windows. ✔️
 
-Confirmed Working on Linux. 📝 TODO
+Port for Linux. 📝 TODO
 
 Write a better GUI. 📝 TODO
 
 Write an automatic audio normalizer to -3dBFS. 📝 TODO
+
+Add multiprocessing support for libav and asynchronous processing of files. 📝 TODO
